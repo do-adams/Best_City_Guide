@@ -140,4 +140,10 @@ a {
     padding: 10px;
     border: solid 1px #d9e4ea;
 	}
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

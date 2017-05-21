@@ -60,6 +60,11 @@ img {
 	font-size: 1.25em;
 }
 
+.name,
+.main-nav {
+  text-align: center;
+}
+
 .name a,
 .main-nav a {
 	text-align: center;
@@ -69,6 +74,8 @@ img {
 	font-size: .95em;
 	color: #3acec2;
 	text-transform: uppercase;
+  display: block;
+  padding: 0.5em;
 }
 
 .main-nav a:hover {
@@ -80,12 +87,24 @@ img {
 .banner {
 	color: #fff;
 	background: #3acec2;
+  text-align: center;
+  padding: 3em;
+  margin: 1em 0;
+}
+
+.col {
+  padding: 1em;
+}
+
+.col h2 {
+  text-align: center;
 }
 
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
+  text-align: center;
 }
 
 /* ---- Page Elements ---- */
@@ -100,7 +119,47 @@ img {
 
 @media (min-width: 769px) {
 
-
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .col h2 {
+    text-align: inherit;
+  }
+  
+  /* ---- Main Header Layout ---- */
+  
+  .name {
+    float: left;
+  }
+  
+  .main-nav {
+    float: right;
+  }
+  
+  .main-nav li {
+    float: left;
+    margin: 0.6em;
+  }
+  
+  /* ---- Column Layout ---- */
+  
+  .col {
+    float: left;
+  }
+  
+  .primary {
+    width: 60%;
+  }
+  
+  .secondary {
+    width: 40%;
+  }
+  
+  .tertiary {
+    clear: both;
+  }
 
 	/* ---- Float clearfix ---- */
 
@@ -110,4 +169,25 @@ img {
 		clear: both;
 	}
 
+}
+
+@media (min-width: 960px) {
+  
+  .col {
+    padding: 1.2em;
+  }
+  
+  .primary {
+    width: 40%;
+  }
+  
+  .secondary {
+    width: 30%;
+  }
+  
+  .tertiary {
+    clear: none;
+    float: left;
+    width: 30%;
+  }
 }

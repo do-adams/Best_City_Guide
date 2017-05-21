@@ -132,6 +132,10 @@ img {
     text-align: inherit;
   }
   
+  .tagline {
+    font-size: 1.4em;
+  }
+  
   /* ---- Main Header Layout ---- */
   
   .name {

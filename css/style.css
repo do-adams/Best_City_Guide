@@ -190,11 +190,9 @@ img {
     width: 40%;
   }
   
-  .secondary {
-    width: 30%;
-  }
-  
+  .secondary,
   .tertiary {
     width: 30%;
   }
+
 }

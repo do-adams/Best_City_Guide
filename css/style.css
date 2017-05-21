@@ -165,10 +165,6 @@ img {
     width: 40%;
   }
   
-  .tertiary {
-    clear: both;
-  }
-
 	/* ---- Float clearfix ---- */
 
 	.clearfix::after {
@@ -194,8 +190,6 @@ img {
   }
   
   .tertiary {
-    clear: none;
-    float: left;
     width: 30%;
   }
 }

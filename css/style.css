@@ -13,7 +13,7 @@ ul {
 }
 
 /* ================================= 
-  Base Styles
+  Base Element Styles
 ==================================== */
 
 * {
@@ -28,7 +28,7 @@ body {
 
 p {
 	font-size: .95em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.8em;
 }
 
 h2,
@@ -46,6 +46,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -56,18 +60,9 @@ a {
 	font-size: 1.25em;
 }
 
-.name,
-.main-nav li {
-	text-align: center;
-	background: #fff;
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
 .name a,
 .main-nav a {
-  padding: 10px 15px;
-  display: block;
+	text-align: center;
 }
 
 .main-nav a {
@@ -82,85 +77,37 @@ a {
 
 /* ---- Layout Containers ---- */
 
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
-}
-
-.main-header {
-  text-align: center;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+.banner {
+	color: #fff;
 	background: #3acec2;
-	margin-bottom: 30px;
 }
 
 .main-footer {
-	text-align: center;
-	padding: 2em 0;
 	background: #d9e4ea;
-  min-height: 89px;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 789px) {
+@media (min-width: 769px) {
 
-	.wrap {
-		min-height: calc(100vh - 89px);
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
 	}
 
-	.container {
-		width: 85%;
-		max-width: 1150px;
-		margin: 0 auto;
-	}
-  
-  .main-nav {
-    float: right;
-  }
-  
-  .main-nav li {
-    float: left;
-    margin-left: 12px;
-  }
-  
-  .name {
-    float: left;
-  }
-
-  .feat-img {
-		width: 300px;
-    float: left;
-    margin-top: 5px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    padding: 10px;
-    border: solid 1px #d9e4ea;
-	}
-  
-  /* ---- Columns ----*/
-  
-  .col {
-    float: left;
-    padding: 0 1em;
-  }
-  
-  .primary {
-    width: 60%;
-  }
-  
-  .secondary {
-    width: 40%;
-  }
-  
-  /* ---- Columns ----*/
-  
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
